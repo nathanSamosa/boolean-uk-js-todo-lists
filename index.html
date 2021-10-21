@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <meta charset="UTF-8" />
+        <script defer src="data.js"></script>
+        <script defer src="index.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <h1>To-do lists</h1>
+
+
+        <div id="userGrid">
+            <div>ID</div><div>NAME</div><div>CITY</div>
+        </div>
+
+
+
+        <h2>Please enter your ID:</h2>
+        <input type="number" id="inputID">
+        <button onclick="fetchUser()">Display tasks</button>
+
+        <div id="welcomeMessage"></div>
+
+        <div id="optionsHidden">
+            <button onclick="fetchToDoAll()">Display all tasks</button>
+            <button onclick="fetchToDoFalse()">Display uncompleted tasks</button>
+            <input type="text" id="newTask">
+            <button onclick="addNewTask()">Add new task</button>
+            <input type="number" id="removeTask">
+            <button onclick="removeTask()">Remove task by #</button>
+        </div>
+
+        <div id="tasksTitle"></div>
+
+        <div id="todoDisplay">
+            
+        </div>
+    </body>
+</html>

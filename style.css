@@ -1,0 +1,31 @@
+#userGrid {
+    display: grid;
+    grid-template-columns: 50px 200px 200px;
+}
+
+#userGrid > * {
+    border: 1px solid black;
+    padding: 5px 2px;
+}
+
+#todoDisplay {
+    display: grid;
+    grid-template-columns: 50px 500px 100px;
+}
+
+#todoDisplay > * {
+    border: 1px solid black;
+    padding: 5px 2px;
+}
+
+#todoDisplayHidden,
+#optionsHidden {
+    display: none;
+}
+
+#options {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    row-gap: 10px;
+    column-gap: 5px;
+}
